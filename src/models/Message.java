@@ -35,7 +35,7 @@ public class Message {
     private String content;
 
     @Column(name = "created_at", nullable  = false)
-    private Timestamp cretate_at;
+    private Timestamp created_at;
 
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
@@ -64,12 +64,12 @@ public class Message {
         this.content = content;
     }
 
-    public Timestamp getCretate_at() {
-        return cretate_at;
+    public Timestamp getCreated_at() {
+        return created_at;
     }
 
-    public void setCretate_at(Timestamp cretate_at) {
-        this.cretate_at = cretate_at;
+    public void setCreated_at(Timestamp created_at) {
+        this.created_at = created_at;
     }
 
     public Timestamp getUpdated_at() {
