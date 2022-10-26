@@ -18,7 +18,12 @@ import javax.persistence.Table;
     @NamedQuery(
         name = "getAllMessages",
         query = "select m from Message as m order by m.id desc"
+    ),
+    @NamedQuery(
+        name = "getMessagesCount",
+        query = "select count(m) from Message as m"
     )
+
 })
 
 @Table(name = "messages")
